@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  FilmsTableViewCell.h
 //  Lesson20
 //
 //  Created by Azat Almeev on 27.04.16.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UITableViewController
-
-
+@interface FilmsTableViewCell : UITableViewCell
+@property (nonatomic, strong) id model;
 @end
-
