@@ -9,7 +9,12 @@
 #import <Mantle/Mantle.h>
 
 @interface Film : MTLModel <MTLJSONSerializing>
-@property (nonatomic, strong) NSString *name;
-@property (nonatomic, strong) NSString *imageURL;
-@property (nonatomic, strong) NSString *premiereDate;
+@property (nonnull, strong) NSString *name;
+@property (nonnull, strong) NSString *imageURL;
+@property (nonnull, strong) NSString *premiereDate;
+@property (nonnull, strong) NSString *rating;
+@property (nonnull, strong) NSString *length;
+@property (nonnull, strong) NSString *fid;
+@property (nonnull, strong) NSString *country;
+@property (nonnull, strong) NSString *year;
 @end

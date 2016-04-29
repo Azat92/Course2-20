@@ -13,7 +13,12 @@
 + (NSDictionary *)JSONKeyPathsByPropertyKey {
     return @{ @"name" : @"nameRU",
               @"imageURL" : @"posterURL",
-              @"premiereDate" : @"premiereRU" };
+              @"premiereDate" : @"premiereRU" ,
+              @"rating" : @"rating",
+              @"length" : @"cinemaHallCount",
+              @"fid" : @"id",
+              @"country" : @"country",
+              @"year":@"year"};
 }
 
 + (NSValueTransformer *)premiereDateJSONTransformer {

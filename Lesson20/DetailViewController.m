@@ -7,8 +7,17 @@
 //
 
 #import "DetailViewController.h"
-
+#import <UIImageView+WebCache.h>
 @interface DetailViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *nameLAbel;
+@property (weak, nonatomic) IBOutlet UILabel *ratLabel;
+@property (weak, nonatomic) IBOutlet UILabel *lengthLabel;
+@property (weak, nonatomic) IBOutlet UILabel *dageLength;
+@property (weak, nonatomic) IBOutlet UIImageView *posterImage;
+@property (weak, nonatomic) IBOutlet UILabel *country;
+@property (weak, nonatomic) IBOutlet UILabel *year;
+
+
 
 @end
 
@@ -16,7 +25,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.nameLAbel.text = self.model.name;
+    self.dageLength.text = self.model.premiereDate;
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://st.kp.yandex.net/images/film_big/%@.jpg", self.model.fid]];
+    [self.posterImage sd_setImageWithURL:url];
+    self.lengthLabel.text = self.model.length;
+    self.ratLabel.text = self.model.rating;
+    self.country.text = self.model.country;
+    self.year.text = self.model.year;
+   
 }
 
 - (IBAction)doneButtonDidClick:(id)sender {
@@ -28,18 +45,5 @@
     // Dispose of any resources that can be recreated.
 }
 
-//- (void)dealloc {
-//    NSLog(@"Detail view controller did dealloc");
-//}
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
