@@ -27,6 +27,8 @@
     self.premiereLabel.text = model.premiereDate;
     NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://st.kp.yandex.net/images/%@", model.imageURL]];
     [self.posterImage sd_setImageWithURL:url];
+    self.lengthLabel.text = model.length;
+    self.ratingLabel.text = model.rating;
 //    Film *model2;
 //    [model mergeValuesForKeysFromModel:model2];
 }
