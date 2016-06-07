@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Film.h"
 
 @interface DetailViewController : UIViewController
+
+@property Film *film;
 
 @end
