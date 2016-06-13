@@ -12,6 +12,7 @@
 #import "NetManager.h"
 
 @interface DetailViewController ()
+
 @property (weak, nonatomic) IBOutlet UIImageView *posterImageView;
 @property (weak, nonatomic) IBOutlet UINavigationItem *filmNameNavigationItem;
 @property (weak, nonatomic) IBOutlet UILabel *ratingLabel;
@@ -43,14 +44,18 @@
                     self.genreLabel.text = self.film.genre;
                     self.descriptionTextView.text = self.film.filmDescription;
                     [hud hide:YES];
+                    static dispatch_once_t onceToken;
+                    dispatch_once(&onceToken, ^{
+                        [self performSelector:@selector(showHint) withObject:nil afterDelay:0.1];
+                    });
                 });
             }
         }];
     });
 }
 
-- (IBAction)doneButtonDidClick:(id)sender {
-//    [self.presentingViewController dismissViewControllerAnimated:YES completion:nil];
+- (void)showHint {
+    [self performSegueWithIdentifier:@"toHitViewController" sender:self];
 }
 
 @end

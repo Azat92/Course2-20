@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		23DC247C1D0EB001007E8B94 /* HintForTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23DC247B1D0EB001007E8B94 /* HintForTableViewController.m */; };
+		23DC247F1D0EB13D007E8B94 /* HintForTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 23DC247E1D0EB13D007E8B94 /* HintForTableView.m */; };
+		23DC24821D0ED3A3007E8B94 /* HintViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23DC24811D0ED3A3007E8B94 /* HintViewController.m */; };
+		23DC24851D0ED569007E8B94 /* HintView.m in Sources */ = {isa = PBXBuildFile; fileRef = 23DC24841D0ED569007E8B94 /* HintView.m */; };
 		AA2557D71CD0FF3A0085836C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AA2557D61CD0FF3A0085836C /* main.m */; };
 		AA2557DA1CD0FF3A0085836C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AA2557D91CD0FF3A0085836C /* AppDelegate.m */; };
 		AA2557DD1CD0FF3A0085836C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA2557DC1CD0FF3A0085836C /* ViewController.m */; };
@@ -23,6 +27,14 @@
 
 /* Begin PBXFileReference section */
 		1E7C3DBE12049E2FC1E846B2 /* libPods-Lesson20.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Lesson20.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		23DC247A1D0EB001007E8B94 /* HintForTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HintForTableViewController.h; sourceTree = "<group>"; };
+		23DC247B1D0EB001007E8B94 /* HintForTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HintForTableViewController.m; sourceTree = "<group>"; };
+		23DC247D1D0EB13D007E8B94 /* HintForTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HintForTableView.h; sourceTree = "<group>"; };
+		23DC247E1D0EB13D007E8B94 /* HintForTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HintForTableView.m; sourceTree = "<group>"; };
+		23DC24801D0ED3A3007E8B94 /* HintViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HintViewController.h; sourceTree = "<group>"; };
+		23DC24811D0ED3A3007E8B94 /* HintViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HintViewController.m; sourceTree = "<group>"; };
+		23DC24831D0ED569007E8B94 /* HintView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HintView.h; sourceTree = "<group>"; };
+		23DC24841D0ED569007E8B94 /* HintView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HintView.m; sourceTree = "<group>"; };
 		3BDCB65A70E7C9819517DDC0 /* Pods-Lesson20.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lesson20.release.xcconfig"; path = "Pods/Target Support Files/Pods-Lesson20/Pods-Lesson20.release.xcconfig"; sourceTree = "<group>"; };
 		AA2557D21CD0FF3A0085836C /* Lesson20.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lesson20.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA2557D61CD0FF3A0085836C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -114,6 +126,14 @@
 				AA2557F21CD106AB0085836C /* FilmsTableViewCell.h */,
 				AA2557F31CD106AB0085836C /* FilmsTableViewCell.m */,
 				AA2557F41CD106AB0085836C /* FilmsTableViewCell.xib */,
+				23DC247A1D0EB001007E8B94 /* HintForTableViewController.h */,
+				23DC247B1D0EB001007E8B94 /* HintForTableViewController.m */,
+				23DC247D1D0EB13D007E8B94 /* HintForTableView.h */,
+				23DC247E1D0EB13D007E8B94 /* HintForTableView.m */,
+				23DC24801D0ED3A3007E8B94 /* HintViewController.h */,
+				23DC24811D0ED3A3007E8B94 /* HintViewController.m */,
+				23DC24831D0ED569007E8B94 /* HintView.h */,
+				23DC24841D0ED569007E8B94 /* HintView.m */,
 			);
 			path = Lesson20;
 			sourceTree = "<group>";
@@ -249,12 +269,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA2557DD1CD0FF3A0085836C /* ViewController.m in Sources */,
+				23DC247F1D0EB13D007E8B94 /* HintForTableView.m in Sources */,
+				23DC247C1D0EB001007E8B94 /* HintForTableViewController.m in Sources */,
 				AA2557F51CD106AB0085836C /* FilmsTableViewCell.m in Sources */,
 				AA2557F11CD102B80085836C /* NetManager.m in Sources */,
+				23DC24821D0ED3A3007E8B94 /* HintViewController.m in Sources */,
 				AA2557DA1CD0FF3A0085836C /* AppDelegate.m in Sources */,
 				AA2557D71CD0FF3A0085836C /* main.m in Sources */,
 				AA2557EE1CD101260085836C /* DetailViewController.m in Sources */,
 				AA2557F91CD10A750085836C /* Film.m in Sources */,
+				23DC24851D0ED569007E8B94 /* HintView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

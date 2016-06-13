@@ -11,6 +11,7 @@
 #import <UIImageView+WebCache.h>
 
 @interface FilmsTableViewCell ()
+
 @property (weak, nonatomic) IBOutlet UIImageView *posterImage;
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *premiereLabel;

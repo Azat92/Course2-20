@@ -33,10 +33,18 @@
                     self.films = [MTLJSONAdapter modelsOfClass:[Film class] fromJSONArray:[data valueForKeyPath:@"filmsData"] error:nil];
                     [self.tableView reloadData];
                     [hud hide:YES];
+                    static dispatch_once_t onceToken;
+                    dispatch_once(&onceToken, ^{
+                        [self performSelector:@selector(showHint) withObject:nil afterDelay:0.1];
+                    });
                 });
             }
         }];
     });
+}
+
+- (void)showHint {
+    [self performSegueWithIdentifier:@"toHitTableViewController" sender:self];
 }
 
 - (IBAction)returnToListVC:(UIStoryboardSegue *)sender {
@@ -70,9 +78,11 @@
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    UINavigationController *nvc = [segue destinationViewController];
-    DetailViewController *vc = [[nvc viewControllers] firstObject];
-    vc.film = self.films[self.selectedItem];
+    if ([[segue identifier] isEqualToString:@"ShowDetail"]) {
+        UINavigationController *nvc = [segue destinationViewController];
+        DetailViewController *vc = [[nvc viewControllers] firstObject];
+        vc.film = self.films[self.selectedItem];
+    }
 }
 
 @end
