@@ -9,7 +9,9 @@
 #import "NetManager.h"
 
 @interface NetManager ()
+
 @property (nonatomic, readonly) NSURLSession *session;
+
 @end
 
 @implementation NetManager

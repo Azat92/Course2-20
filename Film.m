@@ -11,9 +11,17 @@
 @implementation Film
 
 + (NSDictionary *)JSONKeyPathsByPropertyKey {
-    return @{ @"name" : @"nameRU",
+    return @{ @"ID" : @"id",
+              @"name" : @"nameRU",
               @"imageURL" : @"posterURL",
-              @"premiereDate" : @"premiereRU" };
+              @"premiereDate" : @"premiereRU",
+              @"rating" : @"ratingData.rating",
+              @"country" : @"country",
+              @"filmLength" : @"filmLength",
+              @"ratingMPAA" : @"ratingMPAA",
+              @"filmDescription" : @"description",
+              @"genre" : @"genre",
+              @"slogan" : @"slogan" };
 }
 
 + (NSValueTransformer *)premiereDateJSONTransformer {

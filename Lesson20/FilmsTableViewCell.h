@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface FilmsTableViewCell : UITableViewCell
+
 @property (nonatomic, strong) id model;
+
 @end

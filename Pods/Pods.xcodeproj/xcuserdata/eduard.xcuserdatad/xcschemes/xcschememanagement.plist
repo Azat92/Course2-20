@@ -4,20 +4,33 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>MBProgressHUD.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>Mantle.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>0</integer>
 		</dict>
-		<key>Pods.xcscheme</key>
+		<key>Pods-Lesson20.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>2</integer>
 		</dict>
 		<key>SDWebImage.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>3</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
@@ -27,12 +40,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>93F7C30CD2687A0717B8A3EDC39EFD8E</key>
+		<key>481F6A5B1F431457A9C8DF370AAFC111</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A74A079BA044CB665EBF7365E2DE8775</key>
+		<key>F555B3B4421A30352F6B56407915A8C2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FE2F1D7B9D9FCEA148517E4657B243F4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
